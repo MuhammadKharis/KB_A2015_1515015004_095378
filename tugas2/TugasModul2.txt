@@ -1,0 +1,24 @@
+Tugas di modul 2;
+1. a. orang(dian) = dian adalah orang
+   b. mobil(atoz) = atoz adalah merek mobil
+   c. suka(dian,atoz) = dian suka mobil atoz
+   d. dijula(atoz) = atoz dijual
+   e. dapat membeli(X,Y):- = X dapat membeli Y jika.
+      orang(X), = X adalah variabel pengganti orang.
+      mobil(Y), = Y adalah variabel pengganti mobil.
+      suka(X,Y), = X menyukai Y.
+      dijual(Y). = Y dijual.
+   f. suka(_apa) = Setiap orang suka apa.	
+
+2. a. Ricky mempunyai hobi bermain catur = hobi(ricky,catur)
+   b. Embang orangnya orangnya pemalas = pemalas(embang).
+   c. Yusida seorang vegetarian = vegetarian(yusida).
+   d. Kusdiar pandai bermain gitar = pandai(gustiar,gitar).
+   e. mobil yang berwarna merah itu milik Sadek, bermerk BMW. = milik(mobil,Sadek), warna(mobil,merah), merek(mobil, BMW).
+   f. Awan seorang pemain piano, berasal dari Pointianak bersuku jawa. = pemain(Awan, piano), berasal(Awan,pontianak),suku(Awan, jawa).
+   g. Seseorang dikatakan baik jika mempunyai sifat penyayang dan dermawan. = Dikatakn(prang,baik):- sifat(orang, penyayang), sifat(orang,dermawan).
+   h. Seseorang dikatakan pintar jika salah dari Matematika atau IPA atau IPS mendapat nilai tinggi. = Dikatakan(orang,pinatr):- dapat(matematika,tinggi); dapat(ipa,tinggi); dapat(ips,tinggi).
+   i. Setiap orang pasti mati.= Orang(_,mati).
+
+
+

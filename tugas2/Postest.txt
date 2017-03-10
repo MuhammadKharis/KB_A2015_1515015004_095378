@@ -1,0 +1,12 @@
+Tugas keyword prolog.
+
+1. nondeterm = menentukan bahwa kemungkinan ada sejumlah fakta dari suatu predikat sepanjang program berjalan(default).
+2. goal = fungsi untuk menampilkan hasil eksekusi dari program yang telah dibuat pada VPE.
+3. predicates = fungsi untuk memberikan gambaran akan kata-kata yang ada di fungsi clause.
+4. clauses= fungsi untuk memberikan fakta-fakta yang ada untuk memberikan gambaran kepada VPE dalam melakukan pengujian untuk mencari solusi dari pertanyaan yang diberikan.
+5. determ= menentukan bahwa hanya boleh ada satu fakta dari suatu predikat sepanjang program berjalan.
+6. global= menentukan bahwa setion fatc adalah global dalam program.
+7. single= menentukan hanya satu fakta dari predikta yang akan selalu ada.
+8. domain= untuk menyatakan jenis variabel atau argumen.
+9. facts = untuk memulai selection.
+
