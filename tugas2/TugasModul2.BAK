@@ -1,4 +1,4 @@
-PREDICATES
+gPREDICATES
 
 	nondeterm anak(STRING,STRING)
 	nondeterm istri(STRING,STRING)
@@ -23,8 +23,8 @@ CLAUSES
 	wanita("Mary").
 	wanita("Sue").
 	wanita("Ann").
-	usia("Jhon","10").
-	usia("Sue","13").
+	usia("Jhon",10).
+	usia("Sue",13).
 
 
 	ayah(A,B):-anak(B,A).
