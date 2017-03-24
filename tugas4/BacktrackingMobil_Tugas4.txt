@@ -1,0 +1,54 @@
+predicates
+  buy_car(symbol,symbol) - determ (i,o)
+  car(symbol,symbol,integer) - nondeterm (i,o,o)
+  colors(symbol,symbol) - nondeterm (i,i)
+
+clauses
+  buy_car(Model,Color):-
+	car(Model,Color,Price),
+	colors(Color,sexy),!,
+	Price > 25000.
+
+  car(maserati,green,25000).
+  car(corvette,black,24000).
+  car(corvette,red,26000).
+  car(porsche,red,24000).
+
+  colors(red,sexy).
+  colors(black,mean).
+  colors(green,preppy).
+
+goal
+  buy_car(corvette,B).
+
+**********  BACKTRACKING **********
+ buy_car(Model,Color):-
+	car(Model,Color,Price),
+	colors(Color,sexy),!,
+	Price > 25000.
+
+			model
+
+model			color		price
+maserati(A)		green(A)	25000
+corvette(B)		black(A)	24000
+corvette(B)		red(B)		26000
+porsche(A)		red(A)		24000
+
+
+			color
+red(B)		sexy(B)
+black(A)	mean(A)
+green(A)	preppy(A)
+
+						*****PENJELASAN*****
+
+Jadi model sudah di tentukan oleh untuk memanggil corvette maka dia akan memilih pertama si corvette black.
+Setelah itu lanjut ke Y yang dimana akan memanggil sexy yang dimana sexy yang berwarna red.
+Melihat pilihan awan tadi tidak sesuai dengan pemanggilan, jadi harus memilih bagian kedua corvette dan berwarna red sesuai dengan pemanggilan sexy.
+Kenapa price tidak dibandingakan karena selesai diseleksi oleh virtual plog warna ada predikat cut nya (!).
+Jadi predikit cut itu adalah tidak akan bisa memungkinkan terjadinya lacakbalik melewati predikat cut tersebut.
+Jadi hasil akhirnya adalah dia akan memilih warna merah.
+
+ 
+
